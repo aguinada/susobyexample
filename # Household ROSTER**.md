@@ -10,7 +10,7 @@ Below is the layout of a roster on a paper questionnaire  used to capture the ma
 ## Questionnaire designed in Survey Solution
 The image presents how this roster is designed in SuSo.
 
-![](ht../../images/E1.susu.designer.jpg)
+![](ht../../images/E1.suso.design.jpg)
 
 If you have a SuSo Designer account, you can check the questionnaire design in detail [Got to Suso Designer](https://webtester.mysurvey.solutions/WebTester/Interview/ca6d1e51427945738f2189e69c25b65d/Section/7fa7e4e509e9cf60f8139c9879a456cc_1)
 
