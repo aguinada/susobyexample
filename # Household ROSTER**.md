@@ -13,7 +13,7 @@ The image presents how this roster is designed in SuSo.
 ![](ht../../images/E1.susu.designer.jpg)
 
 If you have access to the SuSo Designer, you can go to the previous questionnaire [Got to Suso Designer](https://webtester.mysurvey.solutions/WebTester/Interview/ca6d1e51427945738f2189e69c25b65d/Section/7fa7e4e509e9cf60f8139c9879a456cc_1)
-You also can [download PDF] (ht/../pdf/SSBE-HouseholdROSTER.pdf)
+You also can download its PDF versoin [here](/pdf/SSBE-HouseholdROSTER.pdf)
 
 ## Questionnaire exceution and memory objects 
 
