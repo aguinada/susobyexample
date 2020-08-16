@@ -1,5 +1,6 @@
 # Household ROSTER
 
+![](images/SUSO.png)
 ## Paper questionnaire roster
 This example is intended to show how a tyoical questionnaire roster is designed in [Survey Solutions](https://mysurvey.solutions/). In this examples the roster captures and validates information for each houshold member.
 
