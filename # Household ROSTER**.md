@@ -16,17 +16,17 @@ If you have a SuSo Designer account, you can check the questionnaire design in d
 
 You can also check its PDF version [here](/pdf/SSBE-HouseholdROSTER.pdf)
 
-## Questionnaire exceutiolist and roster during execution
+## List and roster during execution
 
-In our design **hhmembers** object is List type field and **RMEMBERS** roster type linked to hhmembers list. 
-
-When executing the questionnaire, as the user enters the names of the household members, the **hhmembers** object in memory obtains its values. Note that this object has two columns, the **Item1** column stores a identifying number automatically assigned to each member and the **item2** column stores the text entered by the interviewer.
+In the questionnaire design **hhmembers** object is List type field and **RMEMBERS** roster type linked to hhmembers list. 
 
 This screen is used by SuSo to capture household members names and populate hhmembers list object in memory.
 
 ![](ht/../images/E1.suso.hhmemebers.jpg)
 
-Here the result of interviewer data input. The member name and identifier stored in object **hhmembers**.
+When executing the questionnaire, as the user enters the names of the household members, the **hhmembers** object in memory gets its values. Note that this object has two columns, the **Item1** column stores a identifying number automatically assigned to each member and the **Item2** column stores the text entered by the interviewer.
+
+Here the result of interviewer data input. The member names and identifiers stored in object **hhmembers**.
 
 ![](ht/../images/E1.mem.hhmembers.jpg)
 
@@ -40,14 +40,14 @@ Here is a representation of the object RMEMBERS where  each field of the roster 
 
 ## Calculated variables 
 
-Other object in memory are created during the execution of the interview. For example the variable **num_adults_men**  gets its value from a lambda. This expresion loops over the roster RMEMBERS and counts all the rows where the column  **years_ol is greater than 18**
+Outside the roster other objects in memory are created during the execution of the interview. For example the variable **num_adults_men**  gets its value from a lambda exoresion that scrolls the roster RMEMBERS and counts all the rows where the column **years_ol is greater than 18**
 
-Calculate total number of adult men in the household and this number is sotored in variable **num_adults_men**
+Calculate the total number of adult men and this number is sotored in variable **num_adults_men**
 ```
 RMEMBER.Count(x=>x.sex==1 && x.years_old>18)
 ```
 
-Calculate total number of adults in the household and this number is sotored in variable **num_adults_women**
+Calculate total number of adults and this number is sotored in variable **num_adults_women**
 ```
 RMEMBER.Count(x=>x.sex==2 && x.years_old>18)
 ```
