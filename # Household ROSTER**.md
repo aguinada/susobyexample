@@ -21,11 +21,11 @@ In our design **hhmembers** object is List type field and **RMEMBERS** roster ty
 
 When executing the questionnaire, as the user enters the names of the household members, the **hhmembers** memory object obtains its values. Note that the hhmembers object has two columns, the **Item1** stores the identifying number of each member and the **item2** stores the text entered by the user.
 
-This screen is presented in SuSo to capture household members names (hhmembers list)
+This screen is presented by SuSo to capture household members names and populate hhmembers list.
 
 ![](ht/../images/E1.suso.hhmemebers.jpg)
 
-The object hhmembers in memory stores member names in column **Item2** and assigne a secuential number to each one in column **Item1**
+The object hhmembers in memory stores member names in column **Item2** and assigns a secuential number to each member in column **Item1**. 
 
 ![](ht/../images/E1.mem.hhmembers.jpg)
 
@@ -33,11 +33,11 @@ This screen captures information for each member (RMEMBERS roster)
 
 ![](ht/../images/E1.suso.RMEMBERS.jpg)
 
-In memory, the object RMEMBERS stores each field in form of a column.
+In memory, the object RMEMBERS stores each field in form of a column. Note that column **@rowcode** is the member identifier assigned in hhmembers list in column **Item2**
 
 ![](ht/../images/E1.mem.RMEMBERS.jpg)
 
-Variable **num_adults** gets its value from a lambda expresion that loops over the roster RMEMBER and counts all the rows that fits the condition (years_ol>18)
+Other object in memory are created. One of them is the variable **num_adults_men** wich gets its value from a lambda expresion that loops over the roster RMEMBER and counts all the rows that fits the condition : **years_ol>18**
 
 Calculate total number of adult men in the household and this number is sotored in variable **num_adults_men**
 ```
