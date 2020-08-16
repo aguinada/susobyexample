@@ -1,7 +1,7 @@
 # Household ROSTER
 
 ## Paper questionnaire roster
-This example is intended to show how a questionnaire roster is designed in [Survey Solutions](https://mysurvey.solutions/). We use examples to explaion the concepts and how the sofware works.
+This example is intended to show how a questionnaire roster is designed in [Survey Solutions](https://mysurvey.solutions/). We use examples to explaion the concepts and how the sofware works....
 
 Here is typical example of a ROSTER in a paper questionnaire that is used to capture data from household members.
 ![Paper questionnaire ROSTER](ht/../images/E1.paperform.jpg)
