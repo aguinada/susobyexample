@@ -40,7 +40,7 @@ Here is a representation of the object RMEMBERS where  each field of the roster 
 
 ## Calculated variables 
 
-Outside the roster other objects in memory are created during the execution of the interview. For example the variable **num_adults_men**  gets its value from a lambda exoresion that scrolls the roster RMEMBERS and counts all the rows where the column **years_ol is greater than 18**
+Outside the roster other objects are created in memory during the execution of the interview. For example the variable **num_adults_men**  gets its value from a lambda expresion that scrolls the roster RMEMBERS and counts all the rows where the column **years_ol is greater than 18**
 
 Calculate the total number of adult men and this number is sotored in variable **num_adults_men**
 ```
