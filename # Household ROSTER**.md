@@ -18,14 +18,27 @@ The image presents how this roster is designed in SuSo.
 
 In our design **hhmembers** object is List type field and **RMEMBERS** roster type linked to hhmembers list. 
 
-When executing the questionnaire in SuSo, as the user enters the names of the household members, the **hhmembers** memory object obtains these values. Note that the hhmembers object has two columns, the **Item1** column stores the identifying number of each member and the **item2** column stores the text entered by the user.
+When executing the questionnaire, as the user enters the names of the household members, the **hhmembers** memory object obtains its values. Note that the hhmembers object has two columns, the **Item1** stores the identifying number of each member and the **item2** stores the text entered by the user.
 
-Capture of household members (hhmembers list)
+This screen is presented in SuSo to capture household members names (hhmembers list)
+
 ![](ht/../images/E1.suso.hhmemebers.jpg)
+
+The object hhmembers in memory stores member names in column **Item2** and assigne a secuential number to each one in column **Item1**
 
 ![](ht/../images/E1.mem.hhmembers.jpg)
 
-Capture of the main data of each member (RMEMBERS roster)
+This screen captures information for each member (RMEMBERS roster)
+
 ![](ht/../images/E1.suso.RMEMBERS.jpg)
 
-![](th/../images/E1.mem.RMEMBERS.jpg)
+In memory, the object RMEMBERS stores each field in form of a column.
+
+![](ht/../images/E1.mem.RMEMBERS.jpg)
+
+```
+!MEMBERS.Any( p=> IsAnswered(p.coworkers) &&  
+  p.coworkers.Any( o=>!MEMBERS[o[0]].
+      coworkers.Any( m=>m[0]==p.@rowcode))
+)
+```
