@@ -1,6 +1,6 @@
-# Presentation
 ![](/examples/images/SUSO.png)
 
+# Presentation
 The objective of this repository is to provide explanatory material that helps in the design of questionnaires using Survey Solutions software.
 
 Survey Solution (SuSo) is a free software developed by the World Bank with the objective of providing a technological platform for the conduct of wide-purpose surveys under CAPI, CATI or CAWI modalities.
