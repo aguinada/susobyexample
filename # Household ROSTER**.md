@@ -12,32 +12,35 @@ The image presents how this roster is designed in SuSo.
 
 ![](ht../../images/E1.susu.designer.jpg)
 
-If you have access to the SuSo Designer, you can go to the previous questionnaire [Got to Suso Designer](https://webtester.mysurvey.solutions/WebTester/Interview/ca6d1e51427945738f2189e69c25b65d/Section/7fa7e4e509e9cf60f8139c9879a456cc_1)
-You also can download its PDF version [here](/pdf/SSBE-HouseholdROSTER.pdf)
+If you have a SuSo Designer account, you can check the questionnaire designe in detail [Got to Suso Designer](https://webtester.mysurvey.solutions/WebTester/Interview/ca6d1e51427945738f2189e69c25b65d/Section/7fa7e4e509e9cf60f8139c9879a456cc_1)
 
-## Questionnaire exceution and memory objects 
+You can also check its PDF version [here](/pdf/SSBE-HouseholdROSTER.pdf)
+
+## Questionnaire exceutiolist and roster during execution
 
 In our design **hhmembers** object is List type field and **RMEMBERS** roster type linked to hhmembers list. 
 
-When executing the questionnaire, as the user enters the names of the household members, the **hhmembers** memory object obtains its values. Note that the hhmembers object has two columns, the **Item1** stores the identifying number of each member and the **item2** stores the text entered by the user.
+When executing the questionnaire, as the user enters the names of the household members, the **hhmembers** object in memory obtains its values. Note that this object has two columns, the **Item1** column stores a identifying number automatically assigned to each member and the **item2** column stores the text entered by the interviewer.
 
-This screen is presented by SuSo to capture household members names and populate hhmembers list.
+This screen is used by SuSo to capture household members names and populate hhmembers list object in memory.
 
 ![](ht/../images/E1.suso.hhmemebers.jpg)
 
-The object hhmembers in memory stores member names in column **Item2** and assigns a secuential number to each member in column **Item1**. 
+Here the result of interviewer data input. The member name and identifier stored in object **hhmembers**.
 
 ![](ht/../images/E1.mem.hhmembers.jpg)
 
-This screen captures information for each member (RMEMBERS roster)
+With this screen SuSo captures the information for each member. This information is store in RMEMBERS roster.
 
 ![](ht/../images/E1.suso.RMEMBERS.jpg)
 
-In memory, the object RMEMBERS stores each field in form of a column. Note that column **@rowcode** is the member identifier assigned in hhmembers list in column **Item2**
+Here is a representation of the object RMEMBERS where  each field of the roster corresponds to a column in the object. Note that the column **@rowcode** is the member identifier assigned in hhmembers list in column **Item2**.
 
 ![](ht/../images/E1.mem.RMEMBERS.jpg)
 
-Other object in memory are created. One of them is the variable **num_adults_men** wich gets its value from a lambda expresion that loops over the roster RMEMBER and counts all the rows that fits the condition : **years_ol>18**
+## Calculated variables 
+
+Other object in memory are created during the execution of the interview. For example the variable **num_adults_men**  gets its value from a lambda. This expresion loops over the roster RMEMBERS and counts all the rows where the column  **years_ol is greater than 18**
 
 Calculate total number of adult men in the household and this number is sotored in variable **num_adults_men**
 ```
