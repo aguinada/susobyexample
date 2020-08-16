@@ -37,9 +37,14 @@ In memory, the object RMEMBERS stores each field in form of a column.
 
 ![](ht/../images/E1.mem.RMEMBERS.jpg)
 
+Variable **num_adults** gets its value from a lambda expresion that loops over the roster RMEMBER and counts all the rows that fits the condition (years_ol>18)
+
+Calculate total number of adult men in the household and this number is sotored in variable **num_adults_men**
 ```
-!MEMBERS.Any( p=> IsAnswered(p.coworkers) &&  
-  p.coworkers.Any( o=>!MEMBERS[o[0]].
-      coworkers.Any( m=>m[0]==p.@rowcode))
-)
+RMEMBER.Count(x=>x.sex==1 && x.years_old>18)
+```
+
+Calculate total number of adults in the household and this number is sotored in variable **num_adults_women**
+```
+RMEMBER.Count(x=>x.sex==2 && x.years_old>18)
 ```
