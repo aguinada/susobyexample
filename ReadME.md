@@ -1,4 +1,5 @@
 # Presentation
+![](images/SUSO.png)
 
 The objective of this repository is to provide explanatory material that helps in the design of questionnaires using Survey Solutions software.
 
